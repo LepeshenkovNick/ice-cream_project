@@ -1,0 +1,54 @@
+.footer{
+    padding-top: 165px;
+    padding-bottom: 10px;
+    padding-left: 114px;
+}
+
+
+.footer__text{
+margin-bottom: 15px;
+
+font-family: Titan One;
+font-size: 30px;
+line-height: calc(34 / 30);
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFA5BA;
+}
+
+.footer__title{
+font-family: Titan One;
+
+font-size: 58px;
+line-height:calc(66 / 58);
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #D41443;
+}
+
+.footer__contact{
+text-decoration: none;
+font-family: DM Sans;
+font-weight: bold;
+font-size: 16px;
+line-height: 186%;
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+
+.social__icon{
+width: 34px;
+height: 34px;
+
+fill: #FEA5BB;
+
+ &:hover,
+  &:focus {
+   fill: #D41443;
+  }
+
+}
+
