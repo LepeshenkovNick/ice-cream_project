@@ -1,4 +1,5 @@
 .footer{
+    position: relative;
 
     padding-left: 20px;
     padding-right: 20px;
@@ -51,7 +52,7 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #D41443;
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 768px){
 font-size: 48px;
 line-height: calc(55 / 48);
 letter-spacing: 0.06em;
@@ -63,6 +64,23 @@ line-height:calc(66 / 58);
 letter-spacing: 0.06em;
 }
 }
+
+.footer__coctact-text{
+font-family: DM Sans;
+font-weight: bold;
+font-size: 12px;
+line-height: 186%;
+color: #000000;
+
+@media screen and (min-width: 768px){
+font-size: 14px;
+}
+
+@media screen and (min-width: 1200px){
+font-size: 16px;
+}
+}
+
 
 .social__icon{
 width: 34px;
@@ -82,8 +100,49 @@ text-decoration: none;
 font-family: DM Sans;
 font-weight: bold;
 font-size: 16px;
-line-height: 186%;
-letter-spacing: 0.02em;
+line-height: calc(22 / 12);
+color: #D41443;
 
-color: #000000;
+@media screen and (min-width: 768px){
+font-size: 14px;
+line-height:calc(26 / 14);
+}
+
+@media screen and (min-width: 1200px){
+font-size: 16px;
+line-height:calc(30 / 16px);
+letter-spacing: 0.02em;
+}
+}
+
+.footer__copyright{
+font-family: DM Sans;
+font-weight: bold;
+letter-spacing: 0.02em;
+color: #907E82;
+font-size: 14px;
+line-height: calc(21 / 14);
+;
+
+@media screen and (min-width: 768px){
+font-size: 14px;
+line-height: calc(26 / 14);    
+}
+
+@media screen and (min-width: 1200px){
+    font-size: 14px;
+line-height: calc(26 / 14);
+}
+}
+
+.footer__copyright::after{
+    content: "";
+
+position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    bottom: 39px;
+    left: 0;
 }
