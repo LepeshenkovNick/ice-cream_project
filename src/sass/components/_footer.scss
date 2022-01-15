@@ -19,7 +19,14 @@
     
 }
 
+.footer__thumb-left{
+    @media screen and (max-width: 767px) {
+    max-width:234px ;
+    margin-bottom: 43px;   
+    }
+    
 
+}
 .footer__text{
 font-family: Titan One;
 text-transform: uppercase;
@@ -91,10 +98,10 @@ height: 34px;
 
 fill: #FEA5BB;
 
- &:hover,
-  &:focus {
-   fill: #D41443;
-  }
+&:hover,
+&:focus {
+fill: #D41443;
+}
 
 }
 
@@ -141,8 +148,7 @@ line-height: calc(26 / 14);
 .footer__copyright::after{
     content: "";
 
-position: absolute;
-    content: "";
+    position: absolute;
     display: block;
     width: 100%;
     border: 1px solid #e1e1e1;
