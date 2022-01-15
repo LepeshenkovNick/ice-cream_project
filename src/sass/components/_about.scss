@@ -49,7 +49,7 @@
     margin-bottom: 46px;
 }
 .about__img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .about-list__iteam {
@@ -77,18 +77,23 @@
 }
 
 .about-more__link {
+    display: inline-block;
+    padding: 13px 37px;
+    width: 100%;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
     color: #d41443;
     &::after {
         content: '';
-        width: 5px;
-        height: 12px;
-        background-image: url(../images/about/sign.png);
+        width: 8px;
+        height: 10px;
+        background-image: url(/images/about/sign.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
 
-        align-items: center;
-        text-align: center;
         margin-left: 18px;
     }
 }
