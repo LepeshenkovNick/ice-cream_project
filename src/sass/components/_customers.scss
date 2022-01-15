@@ -1,0 +1,43 @@
+.customer-section__slider {
+    max-width: 926px;
+    display: flex;
+    margin: auto;
+}
+
+.customer-section__photo {
+    margin: auto;
+}
+
+.customer-section__text-conatainer {
+    margin-top: 29px;
+
+    background-color: #fafafa;
+}
+
+.customer-section__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+
+    color: $black-text-color;
+}
+
+.customer-section__name {
+    margin-top: 52px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+
+    color: $black-text-color;
+    &::before {
+        position: absolute;
+        bottom: -18px;
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $red-color;
+    }
+}
