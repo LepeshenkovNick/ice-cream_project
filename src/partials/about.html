@@ -1,5 +1,5 @@
 <section class="about">
-    <div class="about__container">
+    <div class="container about__container">
         <p class="about__subtitle">tradition and love</p>
         <h2 class="about__title">how it’s made?</h2>
         <div class="about__img-container">
@@ -12,7 +12,7 @@
                     media="(min-width:1280px)"
                     type="image/png"
                 />
-                
+
                 <source
                     srcset="
                         ./images/about/cow-tab@1x.png 1x,
@@ -21,7 +21,7 @@
                     media="(min-width:768px)"
                     type="image/png"
                 />
-                
+
                 <source
                     srcset="
                         ./images/about/cow-mob@1x.png 1x,
@@ -31,22 +31,36 @@
                     type="image/png"
                 />
             </picture>
-            <img src="./images/about/cow-mob@1x.png" alt="cow" />
+            <img
+                src="./images/about/cow-mob@1x.png"
+                alt="cow"
+                class="about__img"
+            />
         </div>
-        <div>
-            <p class="about__text about__text--dark">
-                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-                justo cursus, faucibus lorem eget, egestas eros. Maecenas
-                eleifend erat at justo fringilla.
-            </p>
-            <p class="about__text about__text--light">
-                Curabitur lacinia enim at ex blandit, vel pellentesque odio
-                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-                Cras massa nibh, tincidunt.
-                <span class="about__text--indent">Aliquam erat volutpat. Aenean accumsan.</span>
-            </p>
-            <a href="#" class="about__link">Read more</a>
+        <ul class="about-list">
+            <li class="about-list__iteam">
+                <p class="about-list__text about__text--dark">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam
+                    vel justo cursus, faucibus lorem eget, egestas eros.
+                    MaecenasDe eleifend erat at justo fringilla.
+                </p>
+            </li>
+            <li class="about-list__iteam">
+                <p class="about-list__text about-list__text--light">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                    elementum. Mauris rhoncus orci in imperdiet placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+                    urna maximus. Cras massa nibh, tincidunt.
+                </p>
+            </li>
+            <li class="about-list__iteam">
+                <p class="about-list__text about-list__text--light">
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+            </li>
+        </ul>
+        <div class="about-more">
+            <a href="#" class="about-more__link">Read more </a>
         </div>
     </div>
 </section>
