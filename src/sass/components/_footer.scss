@@ -1,0 +1,151 @@
+.footer{
+    position: relative;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+
+@media screen  and (min-width: 768px){
+    padding-top: 158px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+}    
+
+@media screen  and (min-width: 1200px){
+    padding-top: 165px;
+    padding-bottom: 10px;
+    padding-left: 114px;
+}
+    
+}
+
+
+.footer__text{
+font-family: Titan One;
+text-transform: uppercase;
+color: #FFA5BA;
+font-size: 18px;
+line-height: calc(21 / 18);
+margin-bottom: 17px;
+
+@media screen and (min-width: 768px) {
+font-size: 26px;
+line-height: calc(30 / 26);
+letter-spacing: 0.04em;
+margin-bottom: 16px;   
+}
+
+@media screen and (min-width: 1200px){
+font-size: 30px;
+line-height: calc(34 / 30);
+letter-spacing: 0.04em;
+margin-bottom: 15px;   
+}
+
+}
+
+.footer__title{
+font-family: Titan One;
+font-size: 34px;
+line-height: calc(39 / 34);
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #D41443;
+
+@media screen and (min-width: 768px){
+font-size: 48px;
+line-height: calc(55 / 48);
+letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px){
+font-size: 58px;
+line-height:calc(66 / 58);
+letter-spacing: 0.06em;
+}
+}
+
+.footer__coctact-text{
+font-family: DM Sans;
+font-weight: bold;
+font-size: 12px;
+line-height: 186%;
+color: #000000;
+
+@media screen and (min-width: 768px){
+font-size: 14px;
+}
+
+@media screen and (min-width: 1200px){
+font-size: 16px;
+}
+}
+
+.social__item{
+color: white;
+}
+
+.social__icon{
+width: 34px;
+height: 34px;
+
+fill: #FEA5BB;
+
+ &:hover,
+  &:focus {
+   fill: #D41443;
+  }
+
+}
+
+.footer__contact{
+text-decoration: none;
+font-family: DM Sans;
+font-weight: bold;
+font-size: 16px;
+line-height: calc(22 / 12);
+color: #D41443;
+
+@media screen and (min-width: 768px){
+font-size: 14px;
+line-height:calc(26 / 14);
+}
+
+@media screen and (min-width: 1200px){
+font-size: 16px;
+line-height:calc(30 / 16px);
+letter-spacing: 0.02em;
+}
+}
+
+.footer__copyright{
+font-family: DM Sans;
+font-weight: bold;
+letter-spacing: 0.02em;
+color: #907E82;
+font-size: 14px;
+line-height: calc(21 / 14);
+;
+
+@media screen and (min-width: 768px){
+font-size: 14px;
+line-height: calc(26 / 14);    
+}
+
+@media screen and (min-width: 1200px){
+    font-size: 14px;
+line-height: calc(26 / 14);
+}
+}
+
+.footer__copyright::after{
+    content: "";
+
+position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    bottom: 39px;
+    left: 0;
+}
