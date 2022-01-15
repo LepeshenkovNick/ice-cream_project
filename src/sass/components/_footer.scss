@@ -4,6 +4,9 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
+    
+    background-color: #FFF5F6;
+    
 
 @media screen  and (min-width: 768px){
     padding-top: 158px;
@@ -19,13 +22,26 @@
     
 }
 
+.footer::after{
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    bottom: 89px;
+    left: 0;
+}
+
+
 .footer__thumb-left{
     @media screen and (max-width: 767px) {
-    max-width:234px ;
     margin-bottom: 43px;   
     }
     
 
+
+    // 
 }
 .footer__text{
 font-family: Titan One;
@@ -34,6 +50,8 @@ color: #FFA5BA;
 font-size: 18px;
 line-height: calc(21 / 18);
 margin-bottom: 17px;
+
+ width:234px ;
 
 @media screen and (min-width: 768px) {
 font-size: 26px;
@@ -59,6 +77,8 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #D41443;
 
+width: 200px;
+
 @media screen and (min-width: 768px){
 font-size: 48px;
 line-height: calc(55 / 48);
@@ -70,6 +90,43 @@ font-size: 58px;
 line-height:calc(66 / 58);
 letter-spacing: 0.06em;
 }
+}
+
+// 
+
+// .footer__thumb-right
+.footer__list-social{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 46px;
+}
+.footer__social:not(:last-child){
+    margin-right: 28px;
+    
+}
+// .social__item
+.social__icon{
+width: 34px;
+height: 34px;
+
+fill: #FEA5BB;
+
+
+
+&:hover,
+&:focus {
+fill: #D41443;
+}
+
+}
+
+
+.footer__contact_wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+
+    margin-bottom: 65px;
 }
 
 .footer__coctact-text{
@@ -86,23 +143,6 @@ font-size: 14px;
 @media screen and (min-width: 1200px){
 font-size: 16px;
 }
-}
-
-.social__item{
-color: white;
-}
-
-.social__icon{
-width: 34px;
-height: 34px;
-
-fill: #FEA5BB;
-
-&:hover,
-&:focus {
-fill: #D41443;
-}
-
 }
 
 .footer__contact{
@@ -125,6 +165,8 @@ letter-spacing: 0.02em;
 }
 }
 
+// 
+
 .footer__copyright{
 font-family: DM Sans;
 font-weight: bold;
@@ -132,7 +174,9 @@ letter-spacing: 0.02em;
 color: #907E82;
 font-size: 14px;
 line-height: calc(21 / 14);
-;
+max-width: 150px;
+margin-left: auto;
+margin-right: auto;
 
 @media screen and (min-width: 768px){
 font-size: 14px;
@@ -145,13 +189,3 @@ line-height: calc(26 / 14);
 }
 }
 
-.footer__copyright::after{
-    content: "";
-
-    position: absolute;
-    display: block;
-    width: 100%;
-    border: 1px solid #e1e1e1;
-    bottom: 39px;
-    left: 0;
-}
