@@ -9,6 +9,20 @@
             <p class="modal__title">Order contact details</p>
             <form action="#" class="modal-form">
                 <div class="modal-form-field">
+                    <!-- <label for="product name" class="modal-input-text">Product</label> -->
+                    <div class="modal-form-field__radio">
+                        <input type="radio" name="product-name" class="modal-input-radio" id="product-1">
+                        <img src="./images/products/ice-cream-mob@1x.png" alt="" width="24" height="24">
+                        <label for="product-1">Ice cream</label>
+                        <input type="radio" name="product-name" class="modal-input-radio active" id="product-2">
+                        <img src="./images/products/ice-coffee-mob@1x.png" alt="" width="24" height="24">
+                        <label for="product-2">Ice coffee</label>
+                        <input type="radio" name="product-name" class="modal-input-radio" id="product-3">
+                        <img src="./images/products/miikshakes-mob@1x.png" alt="" width="24" height="24">
+                        <label for="product-3">Milkshakes</label>
+                    </div>
+                </div>
+                <div class="modal-form-field">
                     <label for="user-name" class="modal-input-text">Name</label>
                     <div class="modal-form-field__input-wrap">
                         <input 
@@ -20,15 +34,6 @@
                         >
                         <svg class="modal-form-field__input-icon" width="18" height="18">
                             <use href="./images/modal-icons.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-form-field">
-                    <label for="user-tel" class="modal-input-text">Product</label>
-                    <div class="modal-form-field__input-wrap">
-                        <input type="tel" name="user-tel" class="modal-input" required id="user-tel">
-                        <svg class="modal-form-field__input-icon" width="18" height="18">
-                            <use href="./images/modal-icons.svg#icon-ice-cream"></use>
                         </svg>
                     </div>
                 </div>
