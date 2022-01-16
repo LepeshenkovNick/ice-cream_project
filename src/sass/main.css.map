@@ -9,7 +9,7 @@
         "base/_body.scss",
         "components/_content-container.scss",
         "components/_footer.scss",
-        "_about.scss",
+        "components/_about.scss",
         "components/_customers.scss",
         "components/_modal.scss"
     ],
