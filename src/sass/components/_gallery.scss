@@ -1,11 +1,19 @@
-.gallery__container{
-    margin: 0 auto;
+.gallery{
     background-image: linear-gradient(
         to bottom,        
-        #FFF5F6 40%,  
-        #ffffff 40%,
-        #ffffff 60%
+        $gallery-gradient-color 40%,  
+        $white-text-color 40%,
+        $white-text-color 60%
       );
+}
+.gallery__container{
+    // margin: 0 auto;
+    // background-image: linear-gradient(
+    //     to bottom,        
+    //     $gallery-gradient-color 40%,  
+    //     $white-text-color 40%,
+    //     $white-text-color 60%
+    //   );
       display: flex;
       align-items: center;
       width: 320px;
