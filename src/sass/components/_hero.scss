@@ -1,30 +1,55 @@
 .hero {
     background-color: #ffb8ca;
     position: relative;
+    @media screen and (max-width: 767px) {
+        overflow: hidden;
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 346px;
+        height: 344px;
+        bottom: 75px;
+        left: 36px;
+
+        border: solid #ffa5ba;
+        background-color: #ffa5ba;
+        border-radius: 50%;
+        @media screen and (min-width: 768px) {
+            width: 324px;
+            height: 322px;
+            bottom: 46px;
+            left: 307px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 538px;
+            height: 538px;
+            bottom: 89px;
+            left: 475px;
+        }
+    }
+    .hero__img-icecream {
+        position: absolute;
+        bottom: 0;
+        left: 117px;
+        z-index: 10;
+        @media screen and (min-width: 768px) {
+            left: 378px;
+        }
+        @media screen and (min-width: 1280px) {
+            left: 594px;
+        }
+    }
 }
-// .hero__img--position::after {
-//     content: '';
-//     display: block;
-//     position: relative;
-//     width: 346px;
-//     height: 344px;
-//     left: 38px;
-//     border: solid #ffa5ba;
-//     background-color: #ffa5ba;
-//     border-radius: 50%;
-// }
-// .hero__img-icecream {
-//     position: absolute;
-//     bottom: 0;
-//     right: 32px;
-//     z-index: 10;
-// }
 .hero__title {
     font-family: 'Titan One', cursive;
     line-height: 1.2;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $white-text-color;
+
+    padding-top: 137px;
 
     @media screen and (max-width: 767px) {
         font-size: 26px;
@@ -37,6 +62,7 @@
         font-size: 22px;
 
         max-width: 162px;
+        padding-top: 15px;
     }
     @media screen and (max-width: 1279px) {
         margin-bottom: 20px;
@@ -46,6 +72,7 @@
 
         max-width: 277px;
         margin-bottom: 25px;
+        padding-top: 84px;
     }
 
     &--color {
@@ -64,11 +91,16 @@
         }
     }
 }
+
 .hero__list {
     display: inline-flex;
     text-align: center;
+
+    margin-bottom: 160px;
+
     position: relative;
     z-index: 200;
+
     @media screen and (min-width: 768px) {
         margin-bottom: 19px;
     }
@@ -80,9 +112,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    background-color: $red-color;
-    color: $white-text-color;
 
     border-radius: 20px;
     min-width: 62px;
@@ -98,9 +127,6 @@
         }
     }
     &--sec {
-        background-color: $white-text-color;
-        color: $red-color;
-
         min-width: 83px;
         @media screen and (min-width: 1280px) {
             min-width: 138px;
@@ -112,12 +138,29 @@
     align-items: center;
     justify-content: center;
 
+    background-color: $red-color;
+    color: $white-text-color;
+
     width: 100%;
     padding: 10px 15px;
     border-radius: 20px;
 
     font-size: 8px;
     line-height: 1.2;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #c7133e;
+    }
+    &--sec {
+        background-color: $white-text-color;
+        color: $red-color;
+    }
+    &--sec:hover,
+    &--sec:focus {
+        background-color: #ecebeb;
+    }
+
     @media screen and (min-width: 1280px) {
         padding: 11px 23px;
 
@@ -139,12 +182,16 @@
 .hero__img-girl {
     position: absolute;
     bottom: 0;
-    right: 0;
-    padding-right: 20px;
+    right: 34px;
+    z-index: 300;
+    @media screen and (min-width: 1280px) {
+        right: 109px;
+    }
 }
 .hero--conteiner {
     display: inline-flex;
     align-items: flex-end;
+    padding-left: 20px;
     @media screen and (min-width: 768px) {
         margin-bottom: 28px;
     }
@@ -172,8 +219,12 @@
 .hero__points {
     display: flex;
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 12px;
+    right: 34px;
+    @media screen and (min-width: 1280px) {
+        top: 74px;
+        right: 97px;
+    }
 }
 
 .hero__points-item {
