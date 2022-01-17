@@ -1,26 +1,26 @@
 .footer{
-    position: relative;
-    padding-top: 113px;
-    
-    padding-bottom: 25px;
-    
-    background-color: #FFF5F6;
+position: relative;
+background-color: #FFF5F6;
 }   
 
 
-.content-container{
+.footer__content-container{
+    // padding-top: 113px;
+    // padding-bottom: 25px;
+
+
     @media screen  and (min-width: 768px){
-    padding-top: 158px;
-    padding-bottom: 18px;
+    // padding-top: 158px;
+    // padding-bottom: 18px;
     padding-left: 36px;
     padding-right: 36px;
 }    
 
 @media screen  and (min-width: 1280px){
-    padding-top: 165px;
-    padding-bottom: 10px;
-    padding-left: 114px;
-    padding-right: 121px;
+    // padding-top: 165px;
+    // padding-bottom: 10px;
+    padding-left: 115px;
+    padding-right: 115px;
     
 }
     
@@ -41,7 +41,7 @@
     }
 
     @media screen and (min-width: 1280px){
-    bottom: 65px;
+    bottom: 45px;
     }
 }
 
