@@ -15,5 +15,17 @@
 <symbol id="icon-ice-cream" viewBox="0 0 18 32">
 <path d="M8.488 1.077c-1.19 0.077-2.188 0.478-2.797 1.125-0.91 0.965-1.688 2.45-1.803 3.447l-0.015 0.14-0.26 0.082c-0.965 0.303-2.027 1.192-2.58 2.155-0.448 0.783-0.575 1.568-0.41 2.522 0.12 0.69 0.347 1.283 1.015 2.637 0.408 0.825 0.703 1.287 1.070 1.68 0.32 0.338 0.62 0.508 0.96 0.545l0.155 0.018 0.065 0.293c0.44 1.918 1.112 4.7 1.565 6.46 0.152 0.593 0.433 1.692 0.623 2.442 0.39 1.532 0.5 1.915 0.82 2.825 0.338 0.955 0.485 1.297 0.713 1.637 0.202 0.305 0.27 0.337 0.482 0.238 0.195-0.095 0.32-0.265 0.553-0.745 0.41-0.85 0.795-1.885 1.783-4.768 0.765-2.233 1.088-3.142 2.457-6.925l0.535-1.475 0.135-0.072c0.328-0.172 0.568-0.395 1.17-1.078 0.24-0.275 0.563-0.63 0.715-0.787 0.708-0.735 0.978-1.215 1.155-2.050 0.060-0.275 0.067-0.37 0.067-0.8 0.003-0.383-0.008-0.533-0.045-0.7-0.15-0.695-0.62-1.613-1.145-2.237-0.565-0.675-1.238-1.185-1.908-1.45l-0.197-0.077 0.010-0.213c0.037-0.66-0.020-1.367-0.14-1.74-0.357-1.107-1.568-2.348-2.793-2.857-0.383-0.16-0.77-0.25-1.205-0.275-0.205-0.012-0.393-0.022-0.412-0.020-0.020 0-0.172 0.010-0.338 0.022z"></path>
 </symbol>
+<symbol id="icon-mob-menu-open" viewBox="0 0 46 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+</symbol>
+<symbol id="icon-mob-menu-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+</symbol>
+<symbol id="icon-vector" viewBox="0 0 26 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
+</symbol>
 </defs>
 </svg>
