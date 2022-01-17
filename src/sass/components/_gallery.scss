@@ -1,27 +1,15 @@
-.gallery{
-    background-image: linear-gradient(
-        to bottom,        
-        $gallery-gradient-color 40%,  
-        $white-text-color 40%,
-        $white-text-color 60%
-      );
-}
+
 .gallery__container{
-    // margin: 0 auto;
-    // background-image: linear-gradient(
-    //     to bottom,        
-    //     $gallery-gradient-color 40%,  
-    //     $white-text-color 40%,
-    //     $white-text-color 60%
-    //   );
       display: flex;
       align-items: center;
       width: 320px;
       justify-content: center;
+      padding-top: 97px ;
       @media screen and(min-width:480px){
         width: 480px; 
         padding-left: 30px;
         padding-right: 30px;
+        padding-top: 140px ;
     }
     @media screen and(min-width:768px){
         width: 768px;
@@ -91,4 +79,22 @@
         margin-bottom: 60px; 
     }
     
+}
+.gradient{
+   
+    background-image: linear-gradient(
+        to bottom,        
+        $gallery-gradient-color 65%,  
+        $white-text-color 35%,
+        $white-text-color 35%
+      );
+      @media screen and(min-width:768px){
+        background-image: linear-gradient(
+        to bottom,        
+        $gallery-gradient-color 55%,  
+        $white-text-color 45%,
+        $white-text-color 45%
+      );
+    }
+
 }
