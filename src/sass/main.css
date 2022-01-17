@@ -923,6 +923,132 @@ body {
   }
 }
 
+.gallery__container {
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF5F6), color-stop(40%, #ffffff), color-stop(60%, #ffffff));
+  background-image: linear-gradient(to bottom, #FFF5F6 40%, #ffffff 40%, #ffffff 60%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery__container {
+    width: 480px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__container {
+    width: 1280px;
+  }
+}
+
+.gallery__container :nth-child(2) {
+  margin-top: 10px;
+}
+
+.gallery__container :nth-child(4) {
+  margin-top: 25px;
+}
+
+.gallery__box-img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  padding: 0 1px;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__box-img {
+    padding: 0 2px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__box-img {
+    padding: 0 5px;
+  }
+}
+
+.galery__img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  margin-bottom: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  .galery__img {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .galery__img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .galery__img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.galery__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.corect-width-galery-img {
+  width: calc(100% / 2);
+  margin-bottom: 0;
+}
+
+.galery__box {
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .galery__box {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .galery__box {
+    margin-bottom: 60px;
+  }
+}
+
 .customer-section__slider {
   max-width: 926px;
   display: -webkit-box;
