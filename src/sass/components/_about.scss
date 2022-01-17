@@ -4,6 +4,7 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+    
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -15,14 +16,11 @@
         width: 1280px;
     }
 }
+
 .about {
     background: #fff5f6;
 }
-.about__container {
-    padding-top: 125px;
-    padding-bottom: 39px;
-    border: 1px solid #d41443;
-}
+
 .about__subtitle {
     font-family: Titan One, sans-serif;
     font-weight: 400;
@@ -32,6 +30,17 @@
     text-transform: uppercase;
     color: #ffa5ba;
     margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+        letter-spacing: 0.04em;
+    }
 }
 .about__title {
     font-family: Titan One, sans-serif;
@@ -43,57 +52,93 @@
     text-transform: uppercase;
     color: #d41443;
     margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+        margin-bottom: 97px;
+    }
 }
-.about__img-container {
-    align-items: center;
-    margin-bottom: 46px;
+
+.about__flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1280px) {
+        background-image: url(/images/about/splash@1x.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(/images/about/splash@2x.png);
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
-.about__img {
-    width: 100%;
-    height: auto;
+
+.about__text-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 46px;
+
+   
 }
-.about-list__iteam {
-    margin-bottom: 17px;
+.about__bg-container {
+     background-image: url(/images/about/splash-mob@1x.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/images/about/splash-mob@2x.png);
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-width: 768px) {
+        background-image: none;
+    }
+
 }
-.about-list__text {
+.about__text {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+
     &--dark {
         color: #000000;
     }
     &--light {
         color: #907e82;
+        margin-top: 17px;
+        @media screen and (min-width: 768px) {
+            margin-top: 35px;
+        }
     }
 }
-.about-more {
-    width: 176px;
-    height: 44px;
+.about__text-more {
     border-radius: 22px;
     background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-more__link {
-    display: inline-block;
-    padding: 13px 37px;
-    width: 100%;
-
+    margin-top: 17px;
+    width: 176px;
+    height: 44px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
     color: #d41443;
-    &::after {
-        content: '';
-        width: 8px;
-        height: 10px;
-        background-image: url(/images/about/sign.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+    text-align: center;
 
-        margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        margin-top: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 45px;
     }
 }
