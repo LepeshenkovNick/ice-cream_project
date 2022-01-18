@@ -89,6 +89,7 @@
     display: block;
     position: relative;
     border: 1px solid #d41443;
+    color: #d41443;
     &::before {
         content: '';
         width: 20px;
@@ -96,6 +97,7 @@
         display: block;
         position: absolute;
         border: 1px solid #d41443;
+        color: #d41443;
         top: 6px;
         right: -1px;
     }
@@ -106,6 +108,7 @@
         display: block;
         position: absolute;
         border: 1px solid #d41443;
+        color: #d41443;
         bottom: 6px;
         right: -1px;
     }
