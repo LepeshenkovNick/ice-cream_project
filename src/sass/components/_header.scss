@@ -1,6 +1,25 @@
 .background {
     background-color: #ffb8ca;
 }
+
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
+}
+
 .header {
     // outline: 1px solid purple;
     padding-top: 38px;
@@ -70,6 +89,7 @@
     display: block;
     position: relative;
     border: 1px solid #d41443;
+    color: #d41443;
     &::before {
         content: '';
         width: 20px;
@@ -77,6 +97,7 @@
         display: block;
         position: absolute;
         border: 1px solid #d41443;
+        color: #d41443;
         top: 6px;
         right: -1px;
     }
@@ -87,6 +108,7 @@
         display: block;
         position: absolute;
         border: 1px solid #d41443;
+        color: #d41443;
         bottom: 6px;
         right: -1px;
     }
