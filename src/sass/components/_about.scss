@@ -2,10 +2,9 @@
     background: #fff5f6;
 }
 .about__container {
-    padding-top: 125px;
-    outline: 1px solid #000000;
     position: relative;
-    background: #fff5f6;
+    padding-top: 125px;
+
     @media screen and (min-width: 768px) and (max-width: 1278px) {
         padding-top: 130px;
     }
@@ -176,7 +175,6 @@
     margin-top: 17px;
     margin-left: 30px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 
     @media screen and (min-width: 768px) {
         margin-top: 62px;
