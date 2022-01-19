@@ -13,16 +13,18 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 input {
@@ -37,7 +39,7 @@ img {
 
 ul li {
     list-style: none;
-    
-	margin: 0;
-	padding: 0;
+
+    margin: 0;
+    padding: 0;
 }
