@@ -19,6 +19,8 @@
 
 .customer-section__slider-item {
     margin-bottom: 30px;
+    text-align: center;
+
     @media screen and(min-width:768px) {
         margin-bottom: 35px;
     }
@@ -49,22 +51,46 @@
     }
 }
 
-.customer-section__text {
+.bg-wrapper {
     padding: 43px 62px 26px 62px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.55;
-
-    text-decoration-line: underline;
-
-    color: $black-text-color;
-    z-index: 20;
-
     @media screen and(min-width:768px) {
         padding: 47px 80px 34px 80px;
     }
     @media screen and(min-width:1280px) {
         padding: 47px 88px 39px 88px;
+    }
+}
+
+.customer-section__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    color: #000000;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: repeating-linear-gradient(
+        0deg,
+        #e1e1e1 0 1px,
+        transparent 1px 32px
+    );
+
+    color: $black-text-color;
+    z-index: 20;
+
+    @media screen and(min-width:768px) {
+        font-size: 14px;
+        line-height: 2.16;
+        text-align: center;
+        letter-spacing: 0.04em;
+        width: 544px;
+    }
+    @media screen and(min-width:1280px) {
+        font-size: 16px;
+        line-height: 1.8;
+        width: 750px;
     }
 }
 
@@ -84,6 +110,10 @@
 .customer-section__name {
     position: relative;
     margin-top: 52px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
     text-align: center;
     font-weight: 500;
@@ -94,15 +124,20 @@
     &::before {
         position: absolute;
         top: -26px;
-        content: '';
-        display: inline-block;
-        width: 4px;
-        height: 4px;
+        content: '...';
+        top: -42px;
+
+        font-size: 35px;
+        color: $red-color;
+        letter-spacing: 5px;
+        display: flex;
         border-radius: 50%;
-        background-color: $red-color;
     }
     @media screen and(min-width:768px) {
         margin-top: 42px;
+        &::before {
+            top: -35px;
+        }
     }
     @media screen and(min-width:1280px) {
         margin-top: 34px;
@@ -141,5 +176,9 @@
 }
 
 .customer-section__slider .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
     background-color: $red-color;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
