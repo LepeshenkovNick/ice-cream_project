@@ -1,27 +1,15 @@
-<header>
-    <div class="header content-container">
+<header class="header">
+    <div class="content-container content-container--header">
         <a href="./index.html"
-            ><picture
-                ><source
-                    srcset="
-                        ./images/header/logo@1x.png 1x,
-                        ./images/header/logo@2x.png 2x
-                    "
-                    media="(min-width: 1280px)" />
-                <source
-                    srcset="
-                        ./images/header/logo@1x.png 1x,
-                        ./images/header/logo@2x.png 2x
-                    "
-                    media="(min-width: 768px)" />
-                <source
-                    srcset="
-                        ./images/header/logo@1x.png 1x,
-                        ./images/header/logo@2x.png 2x
-                    "
-                    media="(min-width: 480px)" />
-                <img src=" ./images/header/logo@1x.png" alt="logo" /></picture
-        ></a>
+            ><img
+                class="logo"
+                srcset="
+                    ./images/header/logo@1x.png 1x,
+                    ./images/header/logo@2x.png 2x
+                "
+                src="./images/header/logo@1x.png"
+                alt="logo"
+        /></a>
         <nav id="menu" class="header-nav">
             <ul class="header-list">
                 <li class="header-item">
@@ -43,11 +31,18 @@
         </nav>
         <div class="header-btns">
             <button type="button" class="btn-open" data-menu-open>
-                <span class="header-burg"></span>
+                <svg width="20" height="12">
+                    <use
+                        href="./images/modal-icons.svg#icon-mob-menu-open"
+                    ></use>
+                </svg>
             </button>
 
             <button type="button" class="header-btn" data-modal-open>
-                Buy now<span class="btn-icon">&#5171;</span>
+                Buy now
+                <svg class="about-more__icon" width="8" height="10">
+                    <use href="./images/symbol-defs.svg#icon-sign-more"></use>
+                </svg>
             </button>
         </div>
     </div>

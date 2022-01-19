@@ -1,6 +1,6 @@
 .content-container {
     width: 100%;
-    // min-height: 320px;
+    min-width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -15,7 +15,4 @@
     @media screen and (min-width: 1280px) {
         width: 1280px;
     }
-}
-.content-conteiner--background {
-    background-color: #ffb8ca;
 }
