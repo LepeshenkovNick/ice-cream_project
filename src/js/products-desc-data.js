@@ -10,17 +10,17 @@
            
     function toggleVisibility() {
         if (this.classList.contains('product-card__button--ice-cream')) {
-            document.querySelector('[products-desc-ice-cream]').classList.toggle('product-card__description--hidden');
+            document.querySelector('[data-desc-ice-cream]').classList.toggle('product-card__description--hidden');
             toggleBtnIceCream.classList.toggle('product-card__button--opened');
         }
 
         if (this.classList.contains('product-card__button--ice-coffee')) {
-            document.querySelector('[products-desc-ice-coffee]').classList.toggle('product-card__description--hidden');
+            document.querySelector('[data-desc-ice-coffee]').classList.toggle('product-card__description--hidden');
             toggleBtnIceCoffee.classList.toggle('product-card__button--opened');
         }
 
         if (this.classList.contains('product-card__button--milk-shake')) {
-            document.querySelector('[products-desc-milk-shake]').classList.toggle('product-card__description--hidden');
+            document.querySelector('[data-desc-milk-shake]').classList.toggle('product-card__description--hidden');
             toggleBtnIceMilkShake.classList.toggle('product-card__button--opened');
         }
     }
