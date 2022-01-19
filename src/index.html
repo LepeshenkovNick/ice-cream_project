@@ -35,12 +35,12 @@
     <body>
         <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
 
+<div class="content-conteiner--background">
         <include src="./partials/header.html"></include>
-
-        <include src="partials/mob-menu.html"></include>
-
         <include src="./partials/hero.html"></include>
-
+</div>
+<main>
+        
         <include src="./partials/products.html"></include>
 
         <include src="./partials/about.html"></include>
@@ -52,10 +52,15 @@
         <include src="./partials/customers.html"></include>
 
         <include src="./partials/contacts.html"></include>
-
+</main>
+        
         <include src="./partials/footer.html"></include>
 
         <include src="partials/modal.html"></include>
+        
+        <include src="partials/mob-menu.html"></include>
+
+        <include src="partials/mob-menu.html"></include>
 
         <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
