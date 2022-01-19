@@ -3,7 +3,7 @@
     padding-top: 38px;
     padding-bottom: 27px;
     display: flex;
-    width: 320px;
+    // width: 320px;
     justify-content: space-between;
     align-items: center;
     @media screen and (min-width: 768px) {
@@ -116,7 +116,7 @@
         &:focus,
         &:hover {
             color: $red-color;
-            background-color: #ecebeb;
+            background-color: $grey-hover-color;
         }
     }
 }
