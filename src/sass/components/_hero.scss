@@ -3,8 +3,10 @@
     @media screen and (max-width: 767px) {
         overflow: hidden;
     }
+}
+.hero--position {
+    position: relative;
     &::after {
-        animation: animationAfter 1000ms cubic-bezier(0.4, 0, 0.2, 1);
         content: '';
         display: block;
         position: absolute;
@@ -12,6 +14,7 @@
         height: 344px;
         bottom: 75px;
         left: 36px;
+        animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
         border: solid #ffa5ba;
         background-color: #ffa5ba;
@@ -19,27 +22,36 @@
         @media screen and (min-width: 768px) {
             width: 324px;
             height: 322px;
-            bottom: 46px;
-            left: 325px;
+            bottom: 40px;
+            left: 278px;
         }
         @media screen and (min-width: 1280px) {
             width: 538px;
             height: 538px;
-            bottom: 89px;
+            bottom: 75px;
             left: 475px;
         }
     }
-    .hero__img-icecream {
-        position: absolute;
-        bottom: 0;
-        left: 117px;
-        z-index: 10;
-        @media screen and (min-width: 768px) {
-            left: 378px;
-        }
-        @media screen and (min-width: 1280px) {
-            left: 594px;
-        }
+}
+.hero__img-icecream {
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+    z-index: 10;
+    animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        left: 378px;
+    }
+    @media screen and (min-width: 1280px) {
+        left: 594px;
+    }
+}
+.hero--margin-title {
+    @media screen and (min-width: 768px) {
+        margin-left: 34px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-left: 115px;
     }
 }
 .hero__title {
@@ -51,6 +63,7 @@
 
     padding-top: 137px;
 
+    animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (max-width: 767px) {
         font-size: 26px;
 
@@ -100,7 +113,7 @@
 
     position: relative;
     z-index: 200;
-
+    animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         margin-bottom: 19px;
     }
@@ -116,6 +129,7 @@
     border-radius: 20px;
     min-width: 62px;
     height: 24px;
+
     &:not(:last-child) {
         margin-right: 8px;
     }
@@ -174,6 +188,7 @@
 .hero__points,
 .hero__points-item,
 .hero__points-item--sub,
+.hero__subtitle-link,
 .hero__subtitle-img {
     @media screen and (max-width: 767px) {
         display: none;
@@ -184,6 +199,7 @@
     bottom: 0;
     right: 34px;
     z-index: 300;
+    animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 1280px) {
         right: 109px;
     }
@@ -191,16 +207,20 @@
 .hero--conteiner {
     display: inline-flex;
     align-items: flex-end;
-    padding-left: 20px;
+
+    animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         margin-bottom: 28px;
+        margin-left: 34px;
     }
     @media screen and (min-width: 1280px) {
         margin-bottom: 45px;
+        margin-left: 77px;
     }
 }
 .hero__subtitle {
     color: $white-text-color;
+
     @media screen and (min-width: 768px) {
         font-size: 8px;
         line-height: 1.5;
@@ -234,6 +254,7 @@
     position: absolute;
     top: 12px;
     right: 34px;
+
     @media screen and (min-width: 1280px) {
         top: 74px;
         right: 97px;
@@ -247,6 +268,7 @@
 
     position: relative;
     z-index: 1;
+    animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &::before {
         position: absolute;
@@ -258,6 +280,7 @@
         border: solid #fff;
         border-radius: 50%;
         background-color: #fff;
+        animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
         @media screen and (min-width: 1280px) {
             width: 30px;
             height: 30px;
@@ -297,7 +320,7 @@
         position: relative;
     }
 }
-@keyframes animationAfter {
+@keyframes animationHero {
     0% {
         opacity: 0;
         transform: scale(0);
